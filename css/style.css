@@ -6,7 +6,8 @@
 }
 
 body{
-    background-image: url("../img/fondo.jpg");  
+    /* background-image: url("../img/fondo.jpg");   */
+    background-color: black;
     display: grid;
     grid-template-rows: 0.2fr 6fr 0.2fr;
 }
@@ -18,6 +19,16 @@ body h1, h2{
 
 body p, a, li, span{
     font-family: 'Readex Pro', sans-serif;
+}
+
+video{
+    position:fixed;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
 }
 
 /* Boton para volver arriba (solo para pantallas pequeñas) */
@@ -52,15 +63,15 @@ body p, a, li, span{
 }
 
 /********************************* HEADER *******************************************************/
-@keyframes borderSwap{
+/* @keyframes borderSwap{
     0%{  border: 2px solid yellow;}
     25%{ border: 2px solid cyan;}
     50%{ border: 2px solid red;}
     75%{ border: 2px solid green;}
     100%{ border: 2px solid yellow;}
-}
+} */
 
-@keyframes letterSwap{
+/* @keyframes letterSwap{
     0%{ color: cyan;}
     12%{ color: black;}
     25%{ color: yellow;}
@@ -70,7 +81,7 @@ body p, a, li, span{
     75%{ color: purple;}
     0%{ color: black;}
     100%{ color: red;}
-}
+} */
 
 @keyframes openNav{
     0%{left: -150%}
@@ -94,7 +105,8 @@ header nav{
     height: 100%;
     margin: 70px 0;
     position: fixed;
-    background-color: #280259;
+    background-color: rgb(18, 59, 112);
+
 }
 
 header nav ul li{
@@ -110,7 +122,12 @@ header nav ul li a{
     text-decoration: none;
 }
 
-header nav ul li:nth-child(1):hover{
+header nav ul li a:hover{
+    background-color: rgb(0, 188, 230);
+    color: black;
+}
+
+/* header nav ul li:nth-child(1):hover{
     background-color: rgb(238, 13, 99);
 }
 
@@ -124,7 +141,7 @@ header nav ul li:nth-child(3):hover{
 
 header nav ul li:nth-child(4):hover{
     background-color: rgb(172, 123, 18);
-}
+} */
 
 
 header nav ul li span{
@@ -141,7 +158,7 @@ header nav ul li span{
 #menu_bar .butMenu{
     display: block;
     padding: 20px;
-    background: rgb(250, 139, 13);
+    background: rgb(0, 7, 44);
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -183,10 +200,10 @@ main {
 }
 
 h1, h2{
-    color:rgb(236, 221, 0);
+    color:rgb(0, 188, 230);
     text-align: center;
     padding-bottom: 20px;
-    border-bottom: 5px solid orangered;
+    border-bottom: 5px solid rgb(18, 59, 112);
 }
 
 h1{
@@ -265,7 +282,7 @@ p{
 
 #shop a{
     margin: 20px;
-    border-bottom: 1px solid orangered;
+    border-bottom: 1px solid rgb(18, 59, 112);
     text-align: center;
     transition: background-color 0.5s, color 0.5s;
 
@@ -288,11 +305,11 @@ p{
 }
 
 #contactUs h2{
-    color:rgb(236, 221, 0);
+    color:rgb(0, 188, 230);
     text-align: center;
     font-size: 3em;
     padding-bottom: 20px;
-    border-bottom: 5px solid orangered;
+    border-bottom: 5px solid rgb(18, 59, 112);
 }
 
 #contactUs form{
@@ -313,7 +330,7 @@ p{
 #contactUs img{
     width: 100%;
     margin-top: 50px;
-    border-top: 5px solid orangered;
+    border-top: 5px solid rgb(18, 59, 112);
     padding-top: 20px;
 
 }
@@ -350,7 +367,8 @@ p{
 /********************************** FOOTER ****************************************************/
 footer{
     color: white; 
-    background: rgba(0, 0, 0, 0.9);
+    /* background: rgb(13, 42, 80, 0.9); */
+    background: rgb(0, 0, 0, 0.9);
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -391,7 +409,7 @@ footer{
     header nav{
         padding: 5px;
         width: 75%;
-        height: 5%;
+        height: 60px;
         margin: 0;
         margin-left: 25%;
         display: block;
