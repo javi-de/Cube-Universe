@@ -33,7 +33,7 @@ video{
 
 /* Boton para volver arriba (solo para pantallas pequeñas) */
 .return img{
-    grid-row: 3;;
+    grid-row: 3;
     position: fixed;
     right: 10px;
     bottom: 5px;
@@ -43,7 +43,7 @@ video{
 /* aviso legal */
 #aviso{
     display: none;
-    text-align: justify;
+    text-align: left;
     position: fixed;
     margin: auto;
     padding: 20px;
@@ -149,10 +149,14 @@ header nav ul li span{
 }
 
 #menu_bar{
-    display: block;
+    display: inline-block;
     width: 100%;
     z-index: 5;
     position: fixed;
+}
+
+.butSkip{
+    display: none;
 }
 
 #menu_bar .butMenu{
@@ -216,7 +220,7 @@ h2{
 
 p{
     margin: 10px;
-    text-align: justify;
+    text-align: left;
     font-size: 1.5em;
 }
 
@@ -246,7 +250,7 @@ p{
     grid-column: 1;
     margin-right: 10px;
     padding-right: 10px;
-    text-align: justify;
+    text-align: left;
     border-right: 1px solid white;
 }
 
@@ -433,6 +437,10 @@ footer{
 
 
 @media all and (min-width: 730px) and (max-width: 1000px) {
+    header nav{
+        left: 0%
+    }
+
     #main, #shop, #contactUs, #whoWeAre{
         background: rgba(0, 0, 0, 0.9);
         color: white;
@@ -455,6 +463,10 @@ footer{
 }
 
 @media all and (min-width: 1000px){
+    header nav{
+        left: 0%
+    }
+
     #main, #shop, #contactUs, #whoWeAre{
         background: rgba(0, 0, 0, 0.9);
         color: white;
