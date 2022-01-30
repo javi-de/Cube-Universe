@@ -12,13 +12,13 @@ body{
 }
 
 body h1, h2{
-    font-family: Arial, Helvetica, Verdana;
-    color: rgb(0, 26, 172);
+    font-family: Arial, Helvetica;
+    color: rgb(81, 68, 255);
 
 }
 
 body p, a, li, span{
-    font-family: Courier, Arial;
+    font-family: Courier, Verdana;
 }
 
 /* Boton para volver arriba (solo para pantallas pequeñas) */
@@ -33,7 +33,6 @@ body p, a, li, span{
 /* aviso legal */
 #aviso{
     display: none;
-    text-align: left;
     position: fixed;
     margin: auto;
     padding: 20px;
