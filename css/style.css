@@ -21,7 +21,7 @@ body p, a, li, span{
     font-family: 'Readex Pro', sans-serif;
 }
 
-video{
+/*video{
     position:fixed;
     min-width: 100%;
     min-height: 100%;
@@ -29,7 +29,7 @@ video{
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     z-index: -1;
-}
+}*/
 
 /* Boton para volver arriba (solo para pantallas pequeñas) */
 .return img{
@@ -52,6 +52,7 @@ video{
     background-color: white;
     height: 30%;
 }
+
 #aviso button{
     float: right;
     padding: 10px 20px;
@@ -106,7 +107,6 @@ header nav{
     margin: 70px 0;
     position: fixed;
     background-color: rgb(18, 59, 112);
-
 }
 
 header nav ul li{
@@ -148,6 +148,19 @@ header nav ul li span{
     margin-right: 10px;
 }
 
+header .butFondo{
+    position: fixed;
+    top: 75px;
+    right: 5px;
+}
+
+header .butFondo button{
+    padding: 10px;
+    background-color: white;
+    font-size: 1em;
+    font-weight: bolder;
+}
+
 #menu_bar{
     display: inline-block;
     width: 100%;
@@ -177,6 +190,8 @@ header nav ul li span{
 #menu_bar span{
     float: right;
 }
+
+
 
 /************************ MAIN *******************************************************/
 
@@ -286,11 +301,16 @@ p{
 
 #shop a{
     margin: 20px;
-    border-bottom: 1px solid rgb(18, 59, 112);
+    border-bottom: 3px solid rgb(18, 59, 112);
     text-align: center;
     transition: background-color 0.5s, color 0.5s;
 
 }
+
+#shop a h3{
+    font-size: 1.5em;
+}
+ 
 #shop a p{
     text-align: center;
 }
@@ -321,15 +341,20 @@ p{
     margin: 10px;
 }
 
+.separar{
+    padding: 10px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/*
 #contactUs form td{
     padding: 10px;
     font-size: 1.5em;
 
-}
+}*/
 
-#contactUs form input{
-    font-size: 1em;
-}
+
 
 #contactUs img{
     width: 100%;
@@ -436,7 +461,7 @@ footer{
 }
 
 
-@media all and (min-width: 730px) and (max-width: 1000px) {
+@media all and (min-width: 730px) and (max-width: 1200px) {
     header nav{
         left: 0%
     }
@@ -462,7 +487,7 @@ footer{
 
 }
 
-@media all and (min-width: 1000px){
+@media all and (min-width: 1200px){
     header nav{
         left: 0%
     }

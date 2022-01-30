@@ -12,22 +12,11 @@
     <title>Cubes Universe</title>
 </head>
 <body>
-    <div id="aviso">
-        <p>IMPORTANTE: Te informamos que los datos que nos facilites serán tratados por 
-        Cube Universe, S.L. La base de legitimación del tratamiento es el 
-        consentimiento otorgado 
-        por el usuario. En ningún caso se cederán datos a terceros, salvo 
-        obligación legal. Puedes acceder, rectificar y suprimir tus datos, 
-        así como ejercer otros derechos, como se explica en la información 
-        adicional. Puedes conocer más en detalle el uso que hacemos de tus
-        datos accediendo a nuestra Política de Privacidad.</p>
-        
-        <button onclick="aceptarAvisoLegal()">Aceptar</button>
-    </div>
-
     <header>
         <div id="menu_bar">
+            <!-- botón para saltar contenido repetitivo en el que caso de que se use un narrador(accesibilidad) -->
             <a class="butSkip" href="#main">Saltar contenido repetible e ir a página Principal</a>
+
             <a href="#" class="butMenu"><span><img src="./img/logo.png" alt=""></span>Menu</a>
         </div>
         <nav id="nav">
@@ -35,12 +24,15 @@
                 <li><a href="#main" id="principal"><span class="fas fa-home"></span>Principal</a></li>
                 <li><a href="#shop" id="tienda"><span class="fas fa-store"></span>Tienda</a></li>
                 <li><a href="#contactUs" id="contacta"><span class="fab fa-weixin"></span>Contacta</a></li>
-                <li><a href="#WhoWeAre" id="quienesSomos"><span class="fas fa-address-book"></span>Quienes somos</a></li>
+                <li><a href="#whoWeAre" id="quienesSomos"><span class="fas fa-address-book"></span>Quienes somos</a></li>
             </ul>
         </nav>
+        <div  class="butFondo"><button>Cambiar fondo</button></div>
+
     </header>
 
     <main>
+
         <!-- <video src="./media/UmbrellaCorp_ad.mp4" muted autoplay loop></video> -->
         <section id="main">
             <h1>¡Bienvenido al universo de los cubos!</h1>
@@ -100,27 +92,27 @@
             <div id="recipientes">
                 <a>
                     <img src="./img/tienda/recipiente_cubo1.jpg" alt="">
-                    <p>Cubo de plastico</p>
+                    <h3>Cubo de plastico</h3>
                     <p>Precio: 1.99 euros</p>
                 </a>
                 <a>
                     <img src="./img/tienda/recipiente_cubo2.jpg" alt="">
-                    <p>Cubo de basura</p>
+                    <h3>Cubo de basura</h3>
                     <p>Precio: 9.99 euros</p>
                 </a>
                 <a>
                     <img src="./img/tienda/recipiente_cubo3.jpg" alt="">
-                    <p>Cubo de metal</p>
+                    <h3>Cubo de metal</h3>
                     <p>Precio: 12.99 euros</p>
                 </a>
                 <a>
                     <img src="./img/tienda/recipiente_cubo4.jpg" alt="">
-                    <p>Cubo papeleta</p>
+                    <h3>Cubo papeleta</h3>
                     <p>Precio: 7.99 euros</p>
                 </a>
                 <a>
                     <img src="./img/tienda/recipiente_cubo5.jpg" alt=""> 
-                    <p>"Cubo" de vidrio</p>
+                    <h3>"Cubo" de vidrio</h3>
                     <p>Precio: 3.99 euros</p>
                 </a>
             </div>
@@ -129,22 +121,22 @@
             <div id="rubiks">
                 <a>
                     <img src="./img/tienda/cubo_rubik1.jpg" alt="">
-                    <p>Cubo de rubik de 3x3, el clásico</p>
+                    <h3>Cubo de rubik de 3x3, el clásico</h3>
                     <p>Precio: 9.99 euros</p>
                 </a>
                 <a>
                     <img src="./img/tienda/cubo_rubik2.jpg" alt="">
-                    <p>Cubo de rubik de 2x2</p>
+                    <h3>Cubo de rubik de 2x2</h3>
                     <p>Precio: 4.99 euros</p>
                 </a>
                 <a>
                     <img src="./img/tienda/cubo_rubik3.jpg" alt="">
-                    <p>Cubo de rubik de 5x5</p>
+                    <h3>Cubo de rubik de 5x5</h3>
                     <p>Precio: 14.99 euros</p>
                 </a>
                 <a>
                     <img src="./img/tienda/cubo_rubik4.jpg" alt="">
-                    <p>Cubo de rubik especial con engranajes</p>
+                    <h3>Cubo de rubik especial con engranajes</h3>
                     <p>Precio: 19.99 euros</p>
                 </a>
             </div>
@@ -153,28 +145,28 @@
             <div id="varios">
                 <a>
                     <img src="./img/tienda/varios_bayoneta.jpg" alt="">
-                    <p>Bayoneta de plástico</p>
+                    <h3>Bayoneta de plástico</h3>
                     <p>Precio: 36.99 euros</p>
                 </a>
                 <a>
                     <img src="./img/tienda/varios_cubitos1.jpg" alt="">
-                    <p>Cubitera</p>
-                    <p>11.99 euros</p>
+                    <h3>Cubitera</h3>
+                    <p>2.99 euros</p>
                 </a>
                 <a>
                     <img src="./img/tienda/varios_lanza.jpg" alt="">
-                    <p>Punta de lanza de plástico</p>
-                    <p>11.99 euros</p>
+                    <h3>Punta de lanza de plástico</h3>
+                    <p>41.99 euros</p>
                 </a>
                 <a>
                     <img src="./img/tienda/varios_lanza2.jpg" alt="">
-                    <p>Punta de pica de plástico</p>
-                    <p>Precio: 11.99 euros</p>
+                    <h3>Punta de pica de plástico</h3>
+                    <p>Precio: 54.99 euros</p>
                 </a>
                 <a>
                     <img src="./img/tienda/varios_reloj.jpg" alt="">
-                    <p>Cubo de reloj de bolsillo (cuerda incluida)</p>
-                    <p>11.99 euros</p>
+                    <h3>Cubo de reloj de bolsillo (cuerda incluida)</h3>
+                    <p>16.99 euros</p>
                 </a>
             </div>
 
@@ -184,23 +176,23 @@
             <h1>Contacta con el equipo</h1>
             <p>Si quieres enviarnos cualquier tipo de mensaje, puedes hacerlo mediante el siguiente formulario: </p>
             <form action="#" method="">
-                <table>
-                    <tr>
-                        <td><label for="nombre">Nombre y apellidos: </label></td>
-                        <td><input type="text" id="nombre" name="nombre"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="asunto">Asunto: </label></td>
-                        <td><input type="text" id="asunto" name="asunto"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="mensaje">Mensaje: </label></td>
-                        <td><textarea id="mensaje" name="mensaje" rows="4"></textarea></td>
-                    </tr>
-                    <tr>
-                        <td><button type="submit" name="enviar" value="Enviar">Enviar</button></td>
-                    </tr>
-                </table>
+                        <div class="separar">
+                            <label for="nombre">Nombre y apellidos: </label>
+                            <input type="text" id="nombre" name="nombre">
+                        </div>
+
+                        <div class="separar">
+                            <label for="asunto">Asunto: </label></td>
+                            <input type="text" id="asunto" name="asunto">
+                        </div>
+
+                        <div class="separar">
+                            <label for="mensaje">Mensaje: </label><br>
+                            <textarea id="mensaje" name="mensaje" rows="10" cols="50"></textarea>
+                        </div>
+
+                        <div class="separar">
+                            <button type="submit" name="enviar" value="Enviar">Enviar</button></div>
             </form>
             <img src="./img/contactanos.png" alt="">
         </section>
@@ -225,6 +217,20 @@
             <a href="https://www.instagram.com" target="_blank"><img src="./img/redes/instagram.png" alt="Logo de Instagram"></a>
         </span>
     </footer>
+
+    <!-- política prot. datos -->
+    <div id="aviso">
+        <p>IMPORTANTE: Te informamos que los datos que nos facilites serán tratados por 
+        Cube Universe, S.L. La base de legitimación del tratamiento es el 
+        consentimiento otorgado 
+        por el usuario. En ningún caso se cederán datos a terceros, salvo 
+        obligación legal. Puedes acceder, rectificar y suprimir tus datos, 
+        así como ejercer otros derechos, como se explica en la información 
+        adicional. Puedes conocer más en detalle el uso que hacemos de tus
+        datos accediendo a nuestra Política de Privacidad.</p>
+        
+        <button onclick="aceptarAvisoLegal()">Aceptar</button>
+    </div>
 
     <!-- boton para volver arriba -->
     <div class="return">
