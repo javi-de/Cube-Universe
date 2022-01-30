@@ -6,19 +6,19 @@
 }
 
 body{
-    /* background-image: url("../img/fondo.jpg");   */
-    background-color: black;
+    background-image: url("../img/fondoOscuro.jpg");
     display: grid;
     grid-template-rows: 0.2fr 6fr 0.2fr;
 }
 
 body h1, h2{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, Verdana;
+    color: rgb(108, 75, 255);
 
 }
 
 body p, a, li, span{
-    font-family: 'Readex Pro', sans-serif;
+    font-family: Courier, Arial;
 }
 
 /*video{
@@ -56,7 +56,7 @@ body p, a, li, span{
 #aviso button{
     float: right;
     padding: 10px 20px;
-    background-color: red;
+    background-color: rgb(66, 0, 0);
     color: white;
     font-size: 1em;
     font-weight: bold;
@@ -64,26 +64,6 @@ body p, a, li, span{
 }
 
 /********************************* HEADER *******************************************************/
-/* @keyframes borderSwap{
-    0%{  border: 2px solid yellow;}
-    25%{ border: 2px solid cyan;}
-    50%{ border: 2px solid red;}
-    75%{ border: 2px solid green;}
-    100%{ border: 2px solid yellow;}
-} */
-
-/* @keyframes letterSwap{
-    0%{ color: cyan;}
-    12%{ color: black;}
-    25%{ color: yellow;}
-    37%{ color: black;}
-    50%{ color: white;}
-    62%{ color: black;}
-    75%{ color: purple;}
-    0%{ color: black;}
-    100%{ color: red;}
-} */
-
 @keyframes openNav{
     0%{left: -150%}
     100%{left: 0%;}
@@ -127,34 +107,17 @@ header nav ul li a:hover{
     color: black;
 }
 
-/* header nav ul li:nth-child(1):hover{
-    background-color: rgb(238, 13, 99);
-}
-
-header nav ul li:nth-child(2):hover{
-    background-color: rgb(44, 44, 253);
-}
-
-header nav ul li:nth-child(3):hover{
-    background-color: rgb(60, 124, 69);
-}
-
-header nav ul li:nth-child(4):hover{
-    background-color: rgb(172, 123, 18);
-} */
-
-
 header nav ul li span{
     margin-right: 10px;
 }
 
-header .butFondo{
+header .botonFondo{
     position: fixed;
     top: 75px;
     right: 5px;
 }
 
-header .butFondo button{
+header .botonFondo button{
     padding: 10px;
     background-color: white;
     font-size: 1em;
@@ -169,7 +132,8 @@ header .butFondo button{
 }
 
 .butSkip{
-    display: none;
+    visibility: hidden;
+    position: fixed;
 }
 
 #menu_bar .butMenu{
@@ -219,7 +183,6 @@ main {
 }
 
 h1, h2{
-    color:rgb(0, 188, 230);
     text-align: center;
     padding-bottom: 20px;
     border-bottom: 5px solid rgb(18, 59, 112);
@@ -254,14 +217,14 @@ p{
     list-style: none;
 }
 
-#main ul div{
+#main ul li{
     animation: borderSwap 5s infinite;
     padding: 20px;
     display: grid;
     grid-column: 5fr 1fr;
 }
 
-#main ul div li{
+#main ul li div{
     grid-column: 1;
     margin-right: 10px;
     padding-right: 10px;
@@ -269,7 +232,7 @@ p{
     border-right: 1px solid white;
 }
 
-#main ul div img{
+#main ul li img{
     grid-column: 2;
     width: 150px;
     height: 150px;
@@ -366,7 +329,7 @@ p{
 
 #contactUs button{
     padding: 10px 20px;
-    background-color: red;
+    background-color: rgb(66, 0, 0);
     color: white;
     font-size: 1em;
     font-weight: bold;
@@ -502,11 +465,11 @@ footer{
         grid-template-rows: 1fr 1fr;
     }
 
-    #main ul div img{
+    #main ul li img{
         transition: width 2s, height 2s;
     }
     
-    #main ul div img:hover{
+    #main ul li img:hover{
         width: 500px;
         height: 500px;
     }
@@ -514,7 +477,6 @@ footer{
     .datos{
         display: inline-block;
         margin: 20px;
-        float: right;
     }
 
     .redes a img{

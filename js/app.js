@@ -1,11 +1,19 @@
 let menuBar;
+let body;
 
 let navPrincipal;
 let navTienda;
 let navContacta;
 let navQuienesSomos;
 
+let eleMain;
+let eleShop;
+let eleContacUs;
+let eleWhoWeAre
+
 let ele_nav;
+
+let butFondo;
 
 window.onload
 {
@@ -17,6 +25,17 @@ window.onload
 
     ele_nav= document.getElementById("nav");
 
+    butFondo= document.getElementById("butFondo");
+
+    eleMain= document.getElementById("main");
+    eleShop= document.getElementById("shop");
+    eleContacUs= document.getElementById("contactUs");
+    eleWhoWeAre= document.getElementById("whoWeAre");
+
+    body= document.body;
+
+    //listener para que al pulsar el boton butFondo, se cambien los colores
+    butFondo.addEventListener("click", cambiarFondo);
 
     //listener para mostrar/ocultar la barra de navegacion
     menuBar.addEventListener("click", mostrar);
@@ -39,6 +58,49 @@ window.onload
     }
 
 }
+
+//listener para que al pulsar el boton butFondo, se cambien los colores
+var fondo= 0; 
+//fondo= 0 -> fondo oscuro 
+//fondo= 1 -> fondo claro
+
+function cambiarFondo(){
+    console.log("weeee");
+    if(fondo== 0){
+        body.style.setProperty("background-image", "url('../img/fondoClaro.jpg')");
+        
+        eleMain.style.setProperty("background", "darkgrey");
+        eleMain.style.setProperty("color", "black");
+        eleShop.style.setProperty("background", "darkgrey");
+        eleShop.style.setProperty("color", "black");
+        eleContacUs.style.setProperty("background", "darkgrey");
+        eleContacUs.style.setProperty("color", "black");
+        eleWhoWeAre.style.setProperty("background", "darkgrey");
+        eleWhoWeAre.style.setProperty("color", "black");
+
+        butFondo.style.setProperty("background", "black");
+        butFondo.style.setProperty("color", "white");
+        
+        fondo= 1;
+    }else{
+        body.style.setProperty("background-image", "url('../img/fondoOscuro.jpg')");
+
+        eleMain.style.setProperty("background", "black");
+        eleMain.style.setProperty("color", "white");
+        eleShop.style.setProperty("background", "black");
+        eleShop.style.setProperty("color", "white");
+        eleContacUs.style.setProperty("background", "black");
+        eleContacUs.style.setProperty("color", "white");
+        eleWhoWeAre.style.setProperty("background", "black");
+        eleWhoWeAre.style.setProperty("color", "white");
+
+        butFondo.style.setProperty("background", "white");
+        butFondo.style.setProperty("color", "black");
+
+        fondo= 0;
+    }
+}
+
 
 
 //listener para mostrar/ocultar la barra de navegacion
