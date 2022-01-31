@@ -18,18 +18,33 @@
             <a class="butSkip" href="#main">Saltar contenido repetible e ir a página Principal</a>
         </div>
         <div id="menu_bar">
-            <a href="#" class="butMenu"><span><img src="./img/logo.png" alt="Logo de Cube Universe"></span>Menu</a>
+            <a href="#" aria-label="Ir a la sección Principal" class="butMenu"><span><img src="./img/logo.png" alt="Logo de Cube Universe"></span>Menu</a>
         </div>
         <nav id="nav">
-            <ul>
-                <li><a href="#main" id="principal"><span class="fas fa-home"></span>Principal</a></li>
-                <li><a href="#shop" id="tienda"><span class="fas fa-store"></span>Tienda</a></li>
-                <li><a href="#contactUs" id="contacta"><span class="fab fa-weixin"></span>Contacta</a></li>
-                <li><a href="#whoWeAre" id="quienesSomos"><span class="fas fa-address-book"></span>Quienes somos</a></li>
+            <ul role="tablist" aria-label="Secciones de la página web">
+                <li role="presentation">
+                    <a href="#main" id="principal" role="tab" aria-controls="main" aria-posinset="1" aria-setsize="4">
+                        <span class="fas fa-home"></span>Principal
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="#shop" id="tienda" role="tab" aria-controls="shop" aria-posinset="2" aria-setsize="4">
+                        <span class="fas fa-store"></span>Tienda
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="#contactUs" id="contacta" role="tab" aria-controls="contactUs" aria-posinset="3" aria-setsize="4">
+                        <span class="fab fa-weixin"></span>Contacta
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="#whoWeAre" id="quienesSomos" role="tab" aria-controls="quienesSomos" aria-posinset="4" aria-setsize="4">
+                        <span class="fas fa-address-book"></span>Quienes somos
+                    </a>
+                </li>
             </ul>
         </nav>
-        <div  class="botonFondo"><button id="butFondo">Cambiar fondo</button></div>
-
+        <div  class="botonFondo"><button aria-label=">Cambiar colores" id="butFondo">Cambiar fondo</button></div>
     </header>
 
     <main>
@@ -41,43 +56,43 @@
             <ul>
                 <li>
                     <p>1. Recipiente, por lo general en forma de cono truncado invertido, con asa abatible en la parte superior.</p>
-                    <img src="./img/tienda/recipiente_cubo1.jpg" alt=""/>
+                    <img src="./img/tienda/recipiente_cubo1.jpg" alt="" aria-hidden="true"/>
                 </li>
                 <li>
                     <p>2. Pieza central de la rueda, donde encajan los radios o rayos. El cubo de una bici es un claro ejemplo, aunque existen en todo tipo de rueda, como en un coche (de ahí que los embellecedores de las ruedas se llamen "tapacubos").</p>
-                    <img src="./img//tienda/varios_cubo_rueda.jpg" alt=""/>
+                    <img src="./img//tienda/varios_cubo_rueda.jpg" alt="" aria-hidden="true"/>
                 </li>
                 <li>
                     <p>3. Torreón circular de las murallas o fortalezas antiguas. Se trata de esa parte de la muralla que sobresale claramente de la misma; no tiene por qué ser forma circular solamente (aunque es lo más común).</p>
-                    <img src="./img/cubo_torreon.jpg" alt=""/>
+                    <img src="./img/cubo_torreon.jpg" alt="" aria-hidden="true"/>
                 </li>
                 <li>
                     <p>4. Cilindro hueco en que remataba por abajo la bayoneta, y que servía para adaptarla al fusil.</p>
-                    <img src="./img/tienda/varios_bayoneta.jpg" alt=""/>
+                    <img src="./img/tienda/varios_bayoneta.jpg" alt="" aria-hidden="true"/>
                 </li>
                 <li>
                     <p>5. Cilindro hueco en que remataba por abajo la moharra de la lanza y en el cual se introducía y aseguraba el asta.</p>
-                    <img src="./img/tienda/varios_lanza.jpg" alt=""/>
+                    <img src="./img/tienda/varios_lanza.jpg" alt="" aria-hidden="true"/>
                 </li>
                 <li>
                     <p>6. Estanque que se hacía en los molinos para acumular agua a fin de mover la muela. Seuele estar lleno de agua siempre que se pueda para asegurar que el molino funcione.</p>
-                    <img src="./img/cubo_molino.jpg" alt=""/>
+                    <img src="./img/cubo_molino.jpg" alt="" aria-hidden="true"/>
                 </li>
                 <li>
                     <p>7. Pieza que tenían algunos relojes de bolsillo, en la cual se arrollaba la cuerda. La cuerda se enrolla dentro de él, no alrededor, como se podría pensar</p>
-                    <img src="./img/tienda/varios_reloj.jpg" alt=""/>
+                    <img src="./img/tienda/varios_reloj.jpg" alt="" aria-hidden="true"/>
                 </li>
                 <li>
                     <p> 8. Sólido regular limitado por seis cuadrados iguales. Un cubo de rubik sirve de ejemplo para conocer este tipo de cubo: con seis lados iguales.</p>
-                    <img src="./img/tienda/cubo_rubik1.jpg" alt=""/>
+                    <img src="./img/tienda/cubo_rubik1.jpg" alt="" aria-hidden="true"/>
                 </li>
                 <li>
                     <p>9. En los techos artesonados, adorno en relieve de forma cúbica. Existen muchos tipos de adornos cúbicos y ,debido al continuo el uso del término, no todos tienen forma de cubo.</p>
-                    <img src="./img/cubo_techo.jpg" alt=""/>
+                    <img src="./img/cubo_techo.jpg" alt="" aria-hidden="true"/>
                 </li>
                 <li>
                     <p>10. Tercera potencia de una cantidad o expresión, que se obtiene multiplicando una u otra dos veces por sí misma.</p>
-                    <img src="./img/cubo_matematicas.jpg" alt=""/>
+                    <img src="./img/cubo_matematicas.jpg" alt="" aria-hidden="true"/>
                 </li>
             </ul>         
         </section>
@@ -89,27 +104,27 @@
             <h2>Cubos recipientes</h2>
             <div id="recipientes">
                 <a>
-                    <img src="./img/tienda/recipiente_cubo1.jpg" alt="">
+                    <img src="./img/tienda/recipiente_cubo1.jpg" alt="" aria-hidden="true">
                     <h3>Cubo de plastico</h3>
                     <p>Precio: 1.99 euros</p>
                 </a>
                 <a>
-                    <img src="./img/tienda/recipiente_cubo2.jpg" alt="">
+                    <img src="./img/tienda/recipiente_cubo2.jpg" alt="" aria-hidden="true">
                     <h3>Cubo de basura</h3>
                     <p>Precio: 9.99 euros</p>
                 </a>
                 <a>
-                    <img src="./img/tienda/recipiente_cubo3.jpg" alt="">
+                    <img src="./img/tienda/recipiente_cubo3.jpg" alt="" aria-hidden="true">
                     <h3>Cubo de metal</h3>
                     <p>Precio: 12.99 euros</p>
                 </a>
                 <a>
-                    <img src="./img/tienda/recipiente_cubo4.jpg" alt="">
+                    <img src="./img/tienda/recipiente_cubo4.jpg" alt="" aria-hidden="true">
                     <h3>Cubo papeleta</h3>
                     <p>Precio: 7.99 euros</p>
                 </a>
                 <a>
-                    <img src="./img/tienda/recipiente_cubo5.jpg" alt=""> 
+                    <img src="./img/tienda/recipiente_cubo5.jpg" alt="" aria-hidden="true"> 
                     <h3>"Cubo" de vidrio</h3>
                     <p>Precio: 3.99 euros</p>
                 </a>
@@ -118,22 +133,22 @@
             <h2>Cubos de Rubik</h2>
             <div id="rubiks">
                 <a>
-                    <img src="./img/tienda/cubo_rubik1.jpg" alt="">
+                    <img src="./img/tienda/cubo_rubik1.jpg" alt="" aria-hidden="true">
                     <h3>Cubo de rubik de 3x3, el clásico</h3>
                     <p>Precio: 9.99 euros</p>
                 </a>
                 <a>
-                    <img src="./img/tienda/cubo_rubik2.jpg" alt="">
+                    <img src="./img/tienda/cubo_rubik2.jpg" alt=""> aria-hidden="true"
                     <h3>Cubo de rubik de 2x2</h3>
                     <p>Precio: 4.99 euros</p>
                 </a>
                 <a>
-                    <img src="./img/tienda/cubo_rubik3.jpg" alt="">
+                    <img src="./img/tienda/cubo_rubik3.jpg" alt="" aria-hidden="true">
                     <h3>Cubo de rubik de 5x5</h3>
                     <p>Precio: 14.99 euros</p>
                 </a>
                 <a>
-                    <img src="./img/tienda/cubo_rubik4.jpg" alt="">
+                    <img src="./img/tienda/cubo_rubik4.jpg" alt="" aria-hidden="true">
                     <h3>Cubo de rubik especial con engranajes</h3>
                     <p>Precio: 19.99 euros</p>
                 </a>
@@ -142,27 +157,27 @@
             <h2>Cubos varios</h2>
             <div id="varios">
                 <a>
-                    <img src="./img/tienda/varios_bayoneta.jpg" alt="">
+                    <img src="./img/tienda/varios_bayoneta.jpg" alt="" aria-hidden="true">
                     <h3>Bayoneta de plástico</h3>
                     <p>Precio: 36.99 euros</p>
                 </a>
                 <a>
-                    <img src="./img/tienda/varios_cubitos1.jpg" alt="">
+                    <img src="./img/tienda/varios_cubitos1.jpg" alt="" aria-hidden="true">
                     <h3>Cubitera</h3>
                     <p>2.99 euros</p>
                 </a>
                 <a>
-                    <img src="./img/tienda/varios_lanza.jpg" alt="">
+                    <img src="./img/tienda/varios_lanza.jpg" alt="" aria-hidden="true">
                     <h3>Punta de lanza de plástico</h3>
                     <p>41.99 euros</p>
                 </a>
                 <a>
-                    <img src="./img/tienda/varios_lanza2.jpg" alt="">
+                    <img src="./img/tienda/varios_lanza2.jpg" alt="" aria-hidden="true">
                     <h3>Punta de pica de plástico</h3>
                     <p>Precio: 54.99 euros</p>
                 </a>
                 <a>
-                    <img src="./img/tienda/varios_reloj.jpg" alt="">
+                    <img src="./img/tienda/varios_reloj.jpg" alt="" aria-hidden="true">
                     <h3>Cubo de reloj de bolsillo (cuerda incluida)</h3>
                     <p>16.99 euros</p>
                 </a>
@@ -190,14 +205,14 @@
                 </div>
 
                 <div class="separar">
-                    <button type="submit" name="enviar" value="Enviar">Enviar</button>
+                    <button type="submit" aria-label="Enviar formulario" name="enviar" value="Enviar">Enviar</button>
                 </div>
             </form>
-            <img src="./img/contactanos.png" alt="">
+            <img src="./img/contactanos.png" alt="" aria-hidden="true">
         </section>
 
         <section id="whoWeAre">
-            <img src="./img/equipo.png" alt="">
+            <img src="./img/equipo.png" alt="" aria-hidden="true">
             <h1>¡Somos un equipo!</h1>
             <p>Somos un grupo de personas apasionadas por los cubos que han decido formar un equipo para poder cumplir nuestro sueño:</p><span>VENDER CUBOS</span>
         </section>
@@ -228,7 +243,7 @@
         adicional. Puedes conocer más en detalle el uso que hacemos de tus
         datos accediendo a nuestra Política de Privacidad.</p>
         
-        <button onclick="aceptarAvisoLegal()">Aceptar</button>
+        <button aria-label="Aceptar Aviso sobre Datos" onclick="aceptarAvisoLegal()">Aceptar</button>
     </div>
 
     <!-- boton para volver arriba -->
