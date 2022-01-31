@@ -66,7 +66,7 @@ var fondo= 0;
 
 function cambiarFondo(){
     if(fondo== 0){
-        body.style.setProperty("background-image", "url('../img/fondoClaro.jpg')");
+        body.style.setProperty("background-image", "url('./img/fondoClaro.jpg')");
         
         eleMain.style.setProperty("background", "darkgrey");
         eleMain.style.setProperty("color", "black");
@@ -82,7 +82,7 @@ function cambiarFondo(){
         
         fondo= 1;
     }else{
-        body.style.setProperty("background-image", "url('../img/fondoOscuro.jpg')");
+        body.style.setProperty("background-image", "url('./img/fondoOscuro.jpg')");
 
         eleMain.style.setProperty("background", "black");
         eleMain.style.setProperty("color", "white");
