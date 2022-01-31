@@ -65,7 +65,6 @@ var fondo= 0;
 //fondo= 1 -> fondo claro
 
 function cambiarFondo(){
-    console.log("weeee");
     if(fondo== 0){
         body.style.setProperty("background-image", "url('../img/fondoClaro.jpg')");
         

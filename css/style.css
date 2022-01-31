@@ -231,7 +231,7 @@ p{
 /************************ tienda **************************/
 #shop{
     margin: 50px auto;
-    /*display: none;*/
+    display: none;
 }
 
 #recipientes, #rubiks, #varios{
@@ -276,7 +276,7 @@ p{
 #contactUs{
     text-align: left;
     margin: 50px auto;
-   /*display: none;*/
+   display: none;
 
 }
 
@@ -327,7 +327,7 @@ p{
 /************************ quienes somos **************************/
 #whoWeAre{
     margin: 50px auto;
-    /*display: none;*/
+    display: none;
 }
 
 #whoWeAre img{
