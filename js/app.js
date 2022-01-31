@@ -66,19 +66,27 @@ var fondo= 0;
 
 function cambiarFondo(){
     if(fondo== 0){
-        body.style.setProperty("background-image", "url('./img/fondoClaro.jpg')");
         
-        eleMain.style.setProperty("background", "darkgrey");
-        eleMain.style.setProperty("color", "black");
-        eleShop.style.setProperty("background", "darkgrey");
-        eleShop.style.setProperty("color", "black");
-        eleContacUs.style.setProperty("background", "darkgrey");
-        eleContacUs.style.setProperty("color", "black");
-        eleWhoWeAre.style.setProperty("background", "darkgrey");
-        eleWhoWeAre.style.setProperty("color", "black");
+        body.style.opacity = 0;
+        body.style.transition = "opacity .5s";
+        
+        setTimeout(() => {
+            body.style.setProperty("background-image", "url('./img/fondoClaro.jpg')");
 
-        butFondo.style.setProperty("background", "black");
-        butFondo.style.setProperty("color", "white");
+            eleMain.style.setProperty("background", "darkgrey");
+            eleMain.style.setProperty("color", "black");
+            eleShop.style.setProperty("background", "darkgrey");
+            eleShop.style.setProperty("color", "black");
+            eleContacUs.style.setProperty("background", "darkgrey");
+            eleContacUs.style.setProperty("color", "black");
+            eleWhoWeAre.style.setProperty("background", "darkgrey");
+            eleWhoWeAre.style.setProperty("color", "black");
+
+            butFondo.style.setProperty("background", "black");
+            butFondo.style.setProperty("color", "white");
+
+            body.style.opacity = 1;
+        }, 1);
         
         fondo= 1;
     }else{
