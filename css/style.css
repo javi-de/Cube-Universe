@@ -121,8 +121,9 @@ header .botonFondo button{
 }
 
 .butSkip{
-    visibility: hidden;
+   
     position: fixed;
+    transform: scale(.00005);
 }
 
 #menu_bar .butMenu{
